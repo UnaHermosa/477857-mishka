@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Кравчишина](https://up.htmlacademy.ru/adaptive/15/user/477857).
-* Наставник: `Неизвестно`.
+* Наставник: [`Неизвестно`Юлька Долгун](https://htmlacademy.ru/profile/id42333).
 
 ---
 
