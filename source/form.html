@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>"Мишка" - заказать товар</title>
-    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -37,21 +37,21 @@
           <p class="filter-order__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="filter-order__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter-order__form-type">
-              <legend>Тип</legend>
+              <legend class="filter-order__legend">Тип</legend>
               <ul class="filter-order__form-list">
                 <li class="radiobutton">
                   <input class="radiobutton__input" type="radio" name="order-type" value="accessories" id="accessories" checked>
-                  <label clas="radiobutton__label" for="accessories">Аксессуары для интерьера</label>
+                  <label class="radiobutton__label" for="accessories">Аксессуары для интерьера</label>
                 </li>
                 <li class="radiobutton">
                   <input class="radiobutton__input" type="radio" name="order-type" value="toy" id="toy">
-                  <label clas="radiobutton__label" for="toy">Детская игрушка</label>
+                  <label class="radiobutton__label" for="toy">Детская игрушка</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-order__form-type">
-              <legend>Цвет</legend>
-              <ul class="filter-order__form-color">
+              <legend class="filter-order__legend">Цвет</legend>
+              <ul class="filter-order__form-list">
                 <li class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="order-color" value="white" id="color-white" checked>
                   <label class="checkbox__label" for="color-white">Белый</label>
@@ -79,8 +79,8 @@
               </ul>
             </fieldset>
             <fieldset class="filter-order__form-type">
-              <legend>ФИО</legend>
-              <ul class="filter-order__form-name">
+              <legend class="filter-order__legend">ФИО</legend>
+              <ul class="filter-order__form-list">
                 <li>
                   <label for="first-name">Имя:</label>
                   <input class="text-input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
@@ -91,22 +91,22 @@
                 </li>
                 <li>
                   <label for="father-name">Отчество:</label>
-                  <input class="text" type="text" name="father-name" id="father-name" placeholder="Отчество, если желаете">
+                  <input class="text-input" type="text" name="father-name" id="father-name" placeholder="Отчество, если желаете">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-order__form-type">
-              <ul class="filter-order__contacts-list">
+              <ul class="filter-order__form-list">
                 <li>
-                  <label for="phone">Тел</label>
-                  <input class="text text--phone" type="tel" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*" required>
+                  <label class="legend-input filter-order__legend" for="phone">Тел</label>
+                  <input class="text-input text--phone" type="tel" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*" required>
                 </li>
                 <li>
-                  <label for="email">E-mail</label>
-                  <input class="text text--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+                  <label class="legend-input filter-order__legend" for="email">E-mail</label>
+                  <input class="text-input text--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
                 </li>
                 <li>
-                  <label for="additionaly">Доп</label>
+                  <label class="legend-input filter-order__legend" for="additionaly">Доп</label>
                   <textarea class="textarea" name="additionaly" id="additionaly">Опишите все ваши пожелания по заказу</textarea>
                 </li>
               </ul>
