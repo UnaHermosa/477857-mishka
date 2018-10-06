@@ -2,10 +2,11 @@
 .page-header {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 700;
-  color: #000000;
-  font-size: 19px;
-  line-height: 18px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.page-header__logo {
+  margin: 0 auto;
 }
