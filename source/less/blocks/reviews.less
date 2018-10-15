@@ -1,41 +1,126 @@
 .reviews {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
   background-color: #ffffff;
   color: #000000;
 }
 
 .reviews__title {
   margin: 0;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   font-size: 25px;
   line-height: 30px;
 }
 
 .reviews__cite {
   margin: 0;
-  padding: 0;
-  padding-bottom: 35px;
+  margin-bottom: 40px;
   font-size: 17px;
   font-weight: 700;
 }
 
 .reviews__text {
   margin: 0;
+  padding-right: 25px;
   padding-bottom: 40px;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
 }
 
+.reviews__author {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__author-name {
+  display: inline-block;
   font-style: normal;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .reviews__author-nickname {
+  display: inline-block;
   font-style: normal;
   font-weight: 400;
+}
+
+.reviews__controls {
+  display: flex;
+  flex-direction: row;
+  width: 260px;
+}
+
+.reviews__button {
+  margin-top: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    margin-bottom: 85px;
+    padding: 0;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 350px 457px;
+  }
+
+  .reviews__title {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__cite {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    padding-bottom: 70px;
+  }
+
+  .reviews__controls {
+    width: 168px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+
+  .reviews__button {
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    margin-bottom: 90px;
+  }
+
+  .reviews__title {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    padding-left: 100px;
+  }
+
+  .reviews__cite {
+    padding-left: 175px;
+  }
+
+  .reviews__text {
+    padding-bottom: 50px;
+  }
 }

@@ -1,3 +1,55 @@
 .textarea {
+  width: 241px;
+  margin-top: 23px;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 17px;
+  padding-left: 15px;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 400;
   border: 2px solid #000000;
+}
+
+.textarea__legend {
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6ec2b2;
+}
+
+
+@media (min-width: @tablet-width) {
+  .textarea {
+    flex-grow: 1;
+    margin-bottom: 52px;
+  }
+
+  .textarea__wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .textarea__legend {
+    width: 167px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .textarea {
+    flex-grow: 0;
+    width: 696px;
+  }
+
+  .textarea__legend {
+    padding-left: 65px;
+    width: 102px;
+  }
+
+  .textarea__wrapper {
+    width: 700px;
+    margin-left: 165px;
+  }
 }

@@ -1,0 +1,36 @@
+.naming {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.naming__label {
+  display: block;
+  font-size: 19px;
+  line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .naming {
+    flex-direction: row;
+    align-items: baseline;
+    min-width: 500px;
+    margin-bottom: 0;
+    flex-grow: 1;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
+  }
+
+  .naming__label {
+    padding-right: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .naming {
+    width: 700px;
+    flex-grow: 0;
+  }
+}

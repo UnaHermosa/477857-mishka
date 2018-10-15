@@ -1,15 +1,14 @@
 .button {
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 85px;
-  padding-left: 85px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   font-size: 17px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
   border: 2px solid #000000;
 
   &--prev {
@@ -20,25 +19,44 @@
     border: 2px solid #ececec;
   }
 
-  &--add {
-    background-color: #6ec2b3;
+  &--submit {
+    width: 260px;
+    margin: 0 auto;
+    color: #444444;
+  }
+
+  &--prev,
+  &--next {
+    width: 126px;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 26px;
+  }
+
+  &--week-best:hover {
     color: #ffffff;
-    font-size: 16px;
-    line-height: 17px;
-    border: none;
+    background-color: #444444;
+  }
+
+  &--week-best:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
-.button__goods {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: #ffffff;
-  background-color: #6ec2b3;
-  line-height: 24px;
+@media (min-width: @tablet-width) {
+  .button__goods {
+    padding-left: 38px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-  &--toys {
-    background-color: #56c3b2;
+  .button--prev,
+  .button--next {
+    border: none;
+  }
+
+  .button--submit {
+    margin: 0;
   }
 }
