@@ -1,5 +1,23 @@
 .text-input {
+  width: 260px;
   margin-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 400;
   border: none;
   border-bottom: 2px solid #000000;
+  flex-grow: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .text-input {
+    margin-bottom: 0;
+
+    &--phone,
+    &--email {
+      background-color: #f1f1f1;
+    }
+  }
 }

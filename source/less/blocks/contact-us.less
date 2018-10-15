@@ -1,0 +1,42 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us__legend {
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6ec2b2;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-us {
+    flex-direction: row;
+    align-items: baseline;
+    min-width: 500px;
+    margin-bottom: 0;
+    flex-grow: 1;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
+  }
+
+  .contact-us__legend {
+    width: 167px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us {
+    width: 700px;
+  }
+
+  .contact-us__legend {
+    padding-left: 65px;
+    width: 102px;
+  }
+}

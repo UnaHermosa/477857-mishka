@@ -1,7 +1,25 @@
 .note {
+  display: block;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  color: #000000;
+  color: #444444;
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .note {
+    order: 1;
+    align-self: center;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .note {
+    font-size:17px;
+    line-height: 30px;
+  }
 }
