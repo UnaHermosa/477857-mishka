@@ -44,7 +44,7 @@
   content: "";
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
   width: 20px;
   height: 2px;
   background-color: #000000;
@@ -82,19 +82,19 @@
   }
 }
 
-.main-nav--nojs .main nav__toggle {
+.main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
-.main-nav--nojs main-nav__item {
+.main-nav--nojs .main-nav__item {
   display: block;
 }
 
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .main-nav__item {
     display: none;
-    }
   }
+}
 
 @media (min-width: @tablet-width) {
   .main-nav {
