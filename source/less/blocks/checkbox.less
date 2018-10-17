@@ -7,6 +7,50 @@
   font-weight: 700;
 }
 
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__label {
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000000;
+    left: -60px;
+    top: 0;
+  }
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 22px;
+  left: -53px;
+  top: 12px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.checkbox__input:hover + .checkbox__label::before {
+  border-color: #6ec2b2;
+}
+
+.checkbox__input:active + .checkbox__label::before {
+  border-color: #000000;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .checkbox {
     width: 156px;

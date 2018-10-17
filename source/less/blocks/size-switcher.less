@@ -11,16 +11,41 @@
   padding-bottom: 18px;
   padding-left: 35px;
   padding-right: 35px;
-  border: 2px solid #ececec;
 }
 
-.size-switcher__active {
-  border-color: #6ec2b3;
+.size-switcher__input {
+  display: none;
+  }
+
+.size-switcher__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 48px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    left: -37px;
+    top: -16px;
+  }
+}
+
+.size-switcher__input:checked + .size-switcher__label::before {
+    border: 2px solid #6ec2b3;
 }
 
 @media (min-width: @tablet-width) {
   .size-switcher__item {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .size-switcher__label::before {
+    width: 112px;
+    left: -52px;
   }
 }
